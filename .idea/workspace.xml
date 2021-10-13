@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b9b3a9b-fbef-41ba-8197-cd0eba46b3b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_cuoi_module/Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_cuoi_module/AddPatient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_cuoi_module/ManagePatient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_cuoi_module/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_cuoi_module/PatientNormal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_cuoi_module/PatientVip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_cuoi_module/ReadAndWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_cuoi_module/RegexData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_thi_cuoi_module/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module2/case_study/data/villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/case_study/data/villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module2/case_study/services/FacilityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/case_study/services/FacilityServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Module2/case_study/utils/ReadAndWrite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Module2/case_study/utils/ReadAndWrite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/services/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/services/FacilityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/FacilityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/utils/ReadAndWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/utils/ReadAndWrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/utils/ReadAndWriteHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/utils/ReadAndWriteHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/utils/ReadAndWriteVilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/utils/ReadAndWriteVilla.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="FxmlFile" />
+        <option value="Kotlin Class" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1u27FQ29qcm6VAWS9hhSu5H1jgE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="public" />
+    <property name="last.edited.regexp" value="(84)-(0971380599)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\codegym\A0321I1-Le-Manh-Hung-moduel2\Module2\src\bai_16_text_file\bai_tap\copy_file_text" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codegym\A0321I1-Le-Manh-Hung-moduel2\Module2\src\bai_7_abstract_class_va_interface\bai_tap\resizeable" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bai_7_abstract_class_va_interface.bai_tap.resizeable" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="case_study.utils" />
+      <recent name="case_study.services" />
+      <recent name="bai_17_binary_file_va_serialization.bai_tap.quan_li_san_pham_luu_ra_file_nhi_phan" />
+      <recent name="bai_12_java_collection_frameword.bai_tap.luyen_tap_su_dung_array_list_va_linked_list_trong_java_collection_framework" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FuramaController">
+    <configuration name="FuramaController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case_study.controllers.FuramaController" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case_study.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagePatient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_thi_cuoi_module.ManagePatient" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_thi_cuoi_module.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelephoneExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_18_string_regex.bai_tap.validate_so_dien_thoai.TelephoneExampleTest" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_18_string_regex.bai_tap.validate_so_dien_thoai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case_study.services.Test" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case_study.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_thi_cuoi_module.test" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_thi_cuoi_module.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FuramaController" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.ManagePatient" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TelephoneExampleTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b9b3a9b-fbef-41ba-8197-cd0eba46b3b4" name="Default Changelist" comment="" />
+      <created>1623851725982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623851725982</updated>
+      <workItem from="1623851727397" duration="92000" />
+      <workItem from="1623851845026" duration="550000" />
+      <workItem from="1623852422670" duration="115000" />
+      <workItem from="1624019603072" duration="104000" />
+      <workItem from="1624019755115" duration="57000" />
+      <workItem from="1624020042129" duration="127000" />
+      <workItem from="1624020196041" duration="3088000" />
+      <workItem from="1624023374490" duration="106000" />
+      <workItem from="1624023495634" duration="206000" />
+      <workItem from="1624023719808" duration="1454000" />
+      <workItem from="1624025206275" duration="870000" />
+      <workItem from="1624026103558" duration="109000" />
+      <workItem from="1624026230394" duration="1214000" />
+      <workItem from="1624027783803" duration="569000" />
+      <workItem from="1624028398162" duration="870000" />
+      <workItem from="1624098979085" duration="5709000" />
+      <workItem from="1624196932995" duration="8462000" />
+      <workItem from="1624270818633" duration="15095000" />
+      <workItem from="1624368822776" duration="593000" />
+      <workItem from="1624369433694" duration="281000" />
+      <workItem from="1624369729009" duration="97000" />
+      <workItem from="1624369845616" duration="5076000" />
+      <workItem from="1624418214551" duration="2000" />
+      <workItem from="1624454359012" duration="3515000" />
+      <workItem from="1624546242961" duration="597000" />
+      <workItem from="1624618316427" duration="12737000" />
+      <workItem from="1624685643800" duration="49000" />
+      <workItem from="1624694216077" duration="13000" />
+      <workItem from="1624878286189" duration="5366000" />
+      <workItem from="1625035075569" duration="55000" />
+      <workItem from="1625052935060" duration="4888000" />
+      <workItem from="1625223382231" duration="8268000" />
+      <workItem from="1625482209433" duration="5608000" />
+      <workItem from="1625648384998" duration="13614000" />
+      <workItem from="1625827614652" duration="9446000" />
+      <workItem from="1626082216014" duration="518000" />
+      <workItem from="1626087622673" duration="6892000" />
+      <workItem from="1626259962803" duration="4122000" />
+      <workItem from="1626427512197" duration="11016000" />
+      <workItem from="1626688358799" duration="9431000" />
+      <workItem from="1626866034774" duration="5748000" />
+      <workItem from="1627032118574" duration="4910000" />
+      <workItem from="1627042600977" duration="2135000" />
+      <workItem from="1627045161131" duration="70000" />
+      <workItem from="1627045559121" duration="118000" />
+      <workItem from="1627045694413" duration="4565000" />
+      <workItem from="1627289576103" duration="6444000" />
+      <workItem from="1627382720934" duration="24000" />
+      <workItem from="1627458685599" duration="10372000" />
+      <workItem from="1627472641053" duration="4265000" />
+      <workItem from="1627640204905" duration="7477000" />
+      <workItem from="1627898962236" duration="8846000" />
+      <workItem from="1628065062054" duration="10118000" />
+      <workItem from="1628244172131" duration="7822000" />
+      <workItem from="1628493829738" duration="8348000" />
+      <workItem from="1628603824076" duration="8524000" />
+      <workItem from="1628845194721" duration="665000" />
+      <workItem from="1628851613224" duration="1937000" />
+      <workItem from="1629099817555" duration="4755000" />
+      <workItem from="1629111042670" duration="3738000" />
+      <workItem from="1629218105613" duration="3000" />
+      <workItem from="1629285019167" duration="4349000" />
+      <workItem from="1629309199660" duration="7000" />
+      <workItem from="1629377751459" duration="81000" />
+      <workItem from="1629461471488" duration="9220000" />
+      <workItem from="1629610920646" duration="8000" />
+      <workItem from="1629628783585" duration="252000" />
+      <workItem from="1629720752269" duration="4061000" />
+      <workItem from="1629779454723" duration="597000" />
+      <workItem from="1629877840769" duration="9160000" />
+      <workItem from="1629892706892" duration="5816000" />
+      <workItem from="1629963040930" duration="595000" />
+      <workItem from="1630066263076" duration="2069000" />
+      <workItem from="1630078156900" duration="2000" />
+      <workItem from="1630140113891" duration="8546000" />
+      <workItem from="1630241413738" duration="1349000" />
+      <workItem from="1630311358337" duration="13073000" />
+      <workItem from="1630327130587" duration="16010000" />
+      <workItem from="1630394644000" duration="9789000" />
+      <workItem from="1630413900236" duration="11660000" />
+      <workItem from="1630483101994" duration="5889000" />
+      <workItem from="1630493772488" duration="13317000" />
+      <workItem from="1630591471206" duration="2384000" />
+      <workItem from="1630669177497" duration="648000" />
+      <workItem from="1631105070771" duration="614000" />
+      <workItem from="1631284983648" duration="10000" />
+      <workItem from="1631551314315" duration="4000" />
+      <workItem from="1631638067679" duration="9000" />
+      <workItem from="1631889939206" duration="382000" />
+      <workItem from="1632143027352" duration="12000" />
+      <workItem from="1632574348616" duration="17000" />
+      <workItem from="1632764772131" duration="3000" />
+      <workItem from="1632840292867" duration="6000" />
+      <workItem from="1633087516700" duration="1357000" />
+      <workItem from="1633513731332" duration="21000" />
+      <workItem from="1634135751706" duration="858000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="91" key="#Inspections" timestamp="1630398395285">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1630398395285" />
+    <state x="237" y="0" key="#Project_Structure" timestamp="1627910728245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="237" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1627910728245" />
+    <state x="547" y="295" key="#Tomcat_Server" timestamp="1633091948319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="547" y="295" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1633091948319" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1627463412256">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1627463412256" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1626434284594">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1626434284594" />
+    <state x="523" y="202" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1630414027218">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="523" y="202" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1630414027218" />
+    <state x="995" y="165" key="#com.intellij.ide.util.MemberChooser" timestamp="1630495825054">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="995" y="165" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1630495825054" />
+    <state x="545" y="306" width="521" height="227" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1630497363926">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="545" y="306" width="521" height="227" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1630497363926" />
+    <state x="457" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1626427640691">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="457" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1626427640691" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626088299864">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1626088299864" />
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1630426318417">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1630426318417" />
+    <state x="554" y="178" key="#toString()_Generation_Settings" timestamp="1629881240437">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="554" y="178" key="#toString()_Generation_Settings/0.0.1536.824@0.0.1536.824" timestamp="1629881240437" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1633092043757">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1633092043757" />
+    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1634136617988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634136617988" />
+    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1634136617988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634136617988" />
+    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1634136617988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634136617988" />
+    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1634136617988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634136617988" />
+    <state width="1493" height="253" key="GridCell.Tab.1.bottom" timestamp="1627463444827">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1627463444827" />
+    <state width="1493" height="253" key="GridCell.Tab.1.center" timestamp="1627463444826">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1627463444826" />
+    <state width="1493" height="253" key="GridCell.Tab.1.left" timestamp="1627463444826">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1627463444826" />
+    <state width="1493" height="253" key="GridCell.Tab.1.right" timestamp="1627463444827">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1627463444827" />
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt" timestamp="1626432022372">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt/0.0.1536.824@0.0.1536.824" timestamp="1626432022372" />
+    <state x="369" y="0" key="SettingsEditor" timestamp="1627045675723">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="369" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1627045675723" />
+    <state x="498" y="301" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1630339064847">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="301" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1630339064847" />
+    <state x="198" y="59" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1627463438556">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="198" y="59" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1627463438556" />
+    <state x="93" y="93" width="1350" height="638" key="dock-window-1" timestamp="1629723065348">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1629723065348" />
+    <state x="349" y="67" key="editAsTableFormatDialogDimension" timestamp="1630500822903">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="67" key="editAsTableFormatDialogDimension/0.0.1536.824@0.0.1536.824" timestamp="1630500822903" />
+    <state x="499" y="108" key="extract.method.dialog" timestamp="1628503337551">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="108" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1628503337551" />
+    <state x="0" y="0" width="577" height="824" key="find.popup" timestamp="1625833772963">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" width="577" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1625833772963" />
+    <state x="209" y="0" key="new project wizard" timestamp="1633092046766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1633092046766" />
+    <state x="596" y="164" key="refactoring.ChangeSignatureDialog" timestamp="1630485931441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="596" y="164" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1630485931441" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1629881160867">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1629881160867" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1630342689200">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1630342689200" />
+    <state x="491" y="317" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1627042716042">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="491" y="317" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1627042716042" />
+  </component>
+</project>
