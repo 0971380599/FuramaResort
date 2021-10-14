@@ -1,7 +1,7 @@
-package case_study.services;
+package services;
 
-import case_study.models.Employee;
-import case_study.utils.ReadAndWrite;
+import models.Employee;
+import utils.ReadAndWrite;
 
 import java.util.ArrayList;
 import java.util.Scanner;

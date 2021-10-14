@@ -1,6 +1,6 @@
-package case_study.services;
+package services;
 
-import case_study.models.Employee;
+import models.Employee;
 
 public interface EmployeeService {
     public void addNewEmployee();

@@ -1,4 +1,4 @@
-package case_study.models;
+package models;
 
 public class Employee extends Person {
     private int employeeCode;

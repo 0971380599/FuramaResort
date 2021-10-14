@@ -1,6 +1,7 @@
-package case_study.services;
+package services;
 
-import case_study.models.Customer;
+
+import models.Customer;
 
 public interface CustomerService {
     public void displayListCustomer();

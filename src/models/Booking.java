@@ -1,4 +1,4 @@
-package case_study.models;
+package models;
 
 
 import java.awt.print.Book;

@@ -1,10 +1,10 @@
-package case_study.services;
+package services;
 
-import case_study.models.Booking;
-import case_study.models.Customer;
-import case_study.models.Facility;
-import case_study.models.Villa;
-import case_study.utils.ReadAndWrite;
+import models.Booking;
+import models.Customer;
+import models.Facility;
+import models.Villa;
+import utils.ReadAndWrite;
 
 import java.util.*;
 

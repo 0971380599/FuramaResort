@@ -1,4 +1,4 @@
-package case_study.services;
+package services;
 
 public interface PromotionService {
     public void displayListCustomersUseService();

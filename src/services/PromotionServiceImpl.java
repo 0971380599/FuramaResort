@@ -1,8 +1,8 @@
-package case_study.services;
+package services;
 
-import case_study.models.Booking;
-import case_study.models.Contract;
-import case_study.models.Customer;
+import models.Booking;
+import models.Contract;
+import models.Customer;
 
 import java.util.*;
 

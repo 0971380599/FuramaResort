@@ -1,6 +1,6 @@
-package case_study.controllers;
+package controllers;
 
-import case_study.services.*;
+import services.*;
 
 import java.util.Properties;
 import java.util.Scanner;

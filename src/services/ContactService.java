@@ -1,4 +1,4 @@
-package case_study.services;
+package services;
 
 public interface ContactService {
     public void createNewContracts();

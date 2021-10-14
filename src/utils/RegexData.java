@@ -1,4 +1,4 @@
-package case_study.utils;
+package utils;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;

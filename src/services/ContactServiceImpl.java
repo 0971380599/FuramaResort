@@ -1,9 +1,9 @@
-package case_study.services;
+package services;
 
-import case_study.models.Booking;
-import case_study.models.Contract;
-import case_study.models.Customer;
-import case_study.utils.ReadAndWrite;
+import models.Booking;
+import models.Contract;
+import models.Customer;
+import utils.ReadAndWrite;
 
 import java.io.Reader;
 import java.util.*;

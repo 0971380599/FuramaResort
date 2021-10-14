@@ -1,28 +1,31 @@
-package case_study.services;
+package services;
 
-import case_study.models.Facility;
-import case_study.models.House;
-import case_study.models.Room;
-import case_study.models.Villa;
-import case_study.utils.ReadAndWriteHouse;
-import case_study.utils.ReadAndWriteRoom;
-import case_study.utils.ReadAndWriteVilla;
-import case_study.utils.RegexData;
+import models.Facility;
+import models.House;
+import models.Room;
+import models.Villa;
+import utils.ReadAndWriteHouse;
+import utils.ReadAndWriteRoom;
+import utils.ReadAndWriteVilla;
+import utils.RegexData;
 
 import java.util.*;
 
 public class FacilityServiceImpl implements FacilityService {
-    private static Map<Villa,Integer> villaIntegerMap = new LinkedHashMap<>();
-    private static Map<Room,Integer> roomIntegerMap = new LinkedHashMap<>();
-    private static Map<House,Integer> houseIntegerMap = new LinkedHashMap<>();
+    private static Map<Villa, Integer> villaIntegerMap = new LinkedHashMap<>();
+    private static Map<Room, Integer> roomIntegerMap = new LinkedHashMap<>();
+    private static Map<House, Integer> houseIntegerMap = new LinkedHashMap<>();
     static final String REGEX_NAME = "^[A-Z][a-z]+";
     static final String REGEX_PEOPLE = "^[1-9]|([1][0-9])|[20]&";
     static final String REGEX_AREA = "^[3-9][0-9]|[1-9][0-9]{2,}&";
+
     static {
         villaIntegerMap.put(new Villa("villa", 200, 3000000, 5, "ngay", "căn hộ cao cấp", 50, 2), Villa.valueVilla());
     }
+
     private static Scanner input = new Scanner(System.in);
-    static  List<Facility> facilityList = new ArrayList<>();
+    static List<Facility> facilityList = new ArrayList<>();
+
     @Override
     public void displayListFacility() {
         try {
@@ -46,7 +49,7 @@ public class FacilityServiceImpl implements FacilityService {
 
     @Override
     public void addNewFacility() {
-        int choice =0;
+        int choice = 0;
         System.out.println("1. Add new Villa");
         System.out.println("2. Add new House");
         System.out.println("3. Add new Room");
@@ -79,11 +82,7 @@ public class FacilityServiceImpl implements FacilityService {
     public void addNewVilla() {
         String serviceName = inputServiceName();
         double usableArea = 0;
-        try {
-            usableArea = Double.parseDouble(inputUsableArea());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
+        usableArea = Double.parseDouble(inputUsableArea());
         System.out.println("Enter rentalCost :");
         double rentalCost = 0;
         try {
@@ -116,20 +115,23 @@ public class FacilityServiceImpl implements FacilityService {
         } catch (NumberFormatException e) {
             System.out.println("Import bad format, please enter back");
         }
-        Villa villa = new Villa(serviceName,usableArea,rentalCost,maximumNumberPeople,rentalType,roomStandard,swimmingPoolArea,numberOfFloors);
-        villaIntegerMap.put(villa,Villa.valueVilla());
+        Villa villa = new Villa(serviceName, usableArea, rentalCost, maximumNumberPeople, rentalType, roomStandard, swimmingPoolArea, numberOfFloors);
+        villaIntegerMap.put(villa, Villa.valueVilla());
         System.out.println("successfully added new villa");
 //        facilityList.addAll(facilityIntegerMap.keySet());
         ReadAndWriteVilla.write(villaIntegerMap, "D:\\codegym\\A0321I1-Le-Manh-Hung-moduel2\\Module2\\src\\case_study\\data\\villa.csv");
     }
+
     public String inputServiceName() {
         System.out.println("Enter serviceName :");
-        return RegexData.regexStr(input.nextLine(),REGEX_NAME,"Re-enter because of wrong format, first letter must be capitalized" );
+        return RegexData.regexStr(input.nextLine(), REGEX_NAME, "Re-enter because of wrong format, first letter must be capitalized");
     }
+
     public String inputUsableArea() {
         System.out.println("Enter usableArea :");
-        return RegexData.regexStr(input.nextLine(),REGEX_AREA,"" );
+        return RegexData.regexStr(input.nextLine(), REGEX_AREA, "the area must be more than 30");
     }
+
     @Override
     public void addNewRoom() {
         System.out.println("Enter serviceName :");
@@ -159,10 +161,10 @@ public class FacilityServiceImpl implements FacilityService {
         String rentalType = input.nextLine();
         System.out.println("Enter serviceFree :");
         String serviceFree = input.nextLine();
-        Room room = new Room(serviceName,usableArea,rentalCost,maximumNumberPeople,rentalType,serviceFree);
+        Room room = new Room(serviceName, usableArea, rentalCost, maximumNumberPeople, rentalType, serviceFree);
         roomIntegerMap.put(room, Room.valueRoom());
 //        facilityList.addAll(facilityIntegerMap.keySet());
-        ReadAndWriteRoom.write( roomIntegerMap, "D:\\codegym\\A0321I1-Le-Manh-Hung-moduel2\\Module2\\src\\case_study\\data\\room.csv");
+        ReadAndWriteRoom.write(roomIntegerMap, "D:\\codegym\\A0321I1-Le-Manh-Hung-moduel2\\Module2\\src\\case_study\\data\\room.csv");
     }
 
     @Override
@@ -201,8 +203,8 @@ public class FacilityServiceImpl implements FacilityService {
         } catch (NumberFormatException e) {
             System.out.println("Import bad format, please enter back");
         }
-        House house = new House(serviceName,usableArea,rentalCost,maximumNumberPeople,rentalType,roomStandard,numberOfFloors);
-        houseIntegerMap.put(house,House.valueHouse());
+        House house = new House(serviceName, usableArea, rentalCost, maximumNumberPeople, rentalType, roomStandard, numberOfFloors);
+        houseIntegerMap.put(house, House.valueHouse());
         System.out.println("successfully added new house");
 //        facilityList.addAll(facilityIntegerMap.keySet());
         ReadAndWriteHouse.write(houseIntegerMap, "D:\\codegym\\A0321I1-Le-Manh-Hung-moduel2\\Module2\\src\\case_study\\data\\house.csv");

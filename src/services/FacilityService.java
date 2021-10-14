@@ -1,4 +1,4 @@
-package case_study.services;
+package services;
 
 public interface FacilityService {
     public void displayListFacility();

@@ -1,6 +1,6 @@
-package case_study.utils;
+package utils;
 
-import case_study.models.Room;
+import models.Room;
 
 import java.io.*;
 import java.util.Map;

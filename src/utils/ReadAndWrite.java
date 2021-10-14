@@ -1,8 +1,8 @@
-package case_study.utils;
+package utils;
 
-import case_study.models.House;
-import case_study.models.Room;
-import case_study.models.Villa;
+import models.House;
+import models.Room;
+import models.Villa;
 
 import java.io.*;
 import java.lang.reflect.Array;
