@@ -75,8 +75,8 @@ public class Booking implements Comparator<Booking> {
     public String toString() {
         return "Booking{" +
                 "bookingCode=" + bookingCode +
-                ", firstDay='" + firstDay + '\'' +
-                ", lastDay='" + lastDay + '\'' +
+                ", firstDay='" + firstDay  +
+                ", lastDay='" + lastDay +
                 ", customer=" + customer.getCustomerCode() +
                 ", facility=" + facility.getServiceName() +
                 '}';

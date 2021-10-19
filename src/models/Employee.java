@@ -71,8 +71,8 @@ public class Employee extends Person {
     public String toString() {
         return "Employee{" +
                 "employeeCode=" + employeeCode +
-                ", degree='" + degree + '\'' +
-                ", position='" + position + '\'' +
+                ", degree='" + degree  +
+                ", position='" + position +
                 ", salary=" + salary +
                 "} " + super.toString();
     }

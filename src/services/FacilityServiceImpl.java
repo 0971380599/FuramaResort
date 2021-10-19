@@ -24,20 +24,20 @@ public class FacilityServiceImpl implements FacilityService {
     }
 
     private static Scanner input = new Scanner(System.in);
-    static List<Facility> facilityList = new ArrayList<>();
+//    static List<Facility> facilityList = new ArrayList<>();
 
     @Override
     public void displayListFacility() {
         try {
-            villaIntegerMap = (Map<Villa, Integer>) ReadAndWriteVilla.read("D:\\codegym\\A0321I1-Le-Manh-Hung-moduel2\\Module2\\src\\case_study\\data\\villa.csv");
+            villaIntegerMap = (Map<Villa, Integer>) ReadAndWriteVilla.read("D:\\codegym\\FuramaResort\\src\\data\\villa.csv");
             for (Map.Entry<Villa, Integer> villaIntegerEntry : villaIntegerMap.entrySet()) {
                 System.out.println("Service : " + villaIntegerEntry.getKey() + "number of hires: " + villaIntegerEntry.getValue());
             }
-            roomIntegerMap = (Map<Room, Integer>) ReadAndWriteRoom.read("D:\\codegym\\A0321I1-Le-Manh-Hung-moduel2\\Module2\\src\\case_study\\data\\room.csv");
+            roomIntegerMap = (Map<Room, Integer>) ReadAndWriteRoom.read("D:\\codegym\\FuramaResort\\src\\data\\room.csv");
             for (Map.Entry<Room, Integer> roomIntegerEntry : roomIntegerMap.entrySet()) {
                 System.out.println("Service : " + roomIntegerEntry.getKey() + "number of hires: " + roomIntegerEntry.getValue());
             }
-            houseIntegerMap = (Map<House, Integer>) ReadAndWriteHouse.read("D:\\codegym\\A0321I1-Le-Manh-Hung-moduel2\\Module2\\src\\case_study\\data\\house.csv");
+            houseIntegerMap = (Map<House, Integer>) ReadAndWriteHouse.read("D:\\codegym\\FuramaResort\\src\\data\\house.csv");
             for (Map.Entry<House, Integer> houseIntegerEntry : houseIntegerMap.entrySet()) {
                 System.out.println("Service : " + houseIntegerEntry.getKey() + "number of hires: " + houseIntegerEntry.getValue());
             }
@@ -90,13 +90,7 @@ public class FacilityServiceImpl implements FacilityService {
         } catch (NumberFormatException e) {
             System.out.println("Import bad format, please enter back");
         }
-        System.out.println("Enter maximumNumberPeople :");
-        int maximumNumberPeople = 0;
-        try {
-            maximumNumberPeople = Integer.parseInt(input.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
+        int maximumNumberPeople = Integer.parseInt(inputNumberPeople());
         System.out.println("Enter rentalType :");
         String rentalType = input.nextLine();
         System.out.println("Enter roomStandard :");
@@ -119,7 +113,7 @@ public class FacilityServiceImpl implements FacilityService {
         villaIntegerMap.put(villa, Villa.valueVilla());
         System.out.println("successfully added new villa");
 //        facilityList.addAll(facilityIntegerMap.keySet());
-        ReadAndWriteVilla.write(villaIntegerMap, "D:\\codegym\\A0321I1-Le-Manh-Hung-moduel2\\Module2\\src\\case_study\\data\\villa.csv");
+        ReadAndWriteVilla.write(villaIntegerMap, "D:\\codegym\\FuramaResort\\src\\data\\villa.csv");
     }
 
     public String inputServiceName() {
@@ -132,17 +126,16 @@ public class FacilityServiceImpl implements FacilityService {
         return RegexData.regexStr(input.nextLine(), REGEX_AREA, "the area must be more than 30");
     }
 
+    public String inputNumberPeople() {
+        System.out.println("Enter maximumNumberPeople :");
+        return RegexData.regexStr(input.nextLine(), REGEX_PEOPLE, "max number People 20");
+    }
+
     @Override
     public void addNewRoom() {
-        System.out.println("Enter serviceName :");
-        String serviceName = input.nextLine();
-        System.out.println("Enter usableArea :");
+        String serviceName = inputServiceName();
         double usableArea = 0;
-        try {
-            usableArea = Double.parseDouble(input.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
+        usableArea = Double.parseDouble(inputUsableArea());
         System.out.println("Enter rentalCost :");
         double rentalCost = 0;
         try {
@@ -150,13 +143,7 @@ public class FacilityServiceImpl implements FacilityService {
         } catch (NumberFormatException e) {
             System.out.println("Import bad format, please enter back");
         }
-        System.out.println("Enter maximumNumberPeople :");
-        int maximumNumberPeople = 0;
-        try {
-            maximumNumberPeople = Integer.parseInt(input.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
+        int maximumNumberPeople = Integer.parseInt(inputNumberPeople());
         System.out.println("Enter rentalType :");
         String rentalType = input.nextLine();
         System.out.println("Enter serviceFree :");
@@ -164,20 +151,14 @@ public class FacilityServiceImpl implements FacilityService {
         Room room = new Room(serviceName, usableArea, rentalCost, maximumNumberPeople, rentalType, serviceFree);
         roomIntegerMap.put(room, Room.valueRoom());
 //        facilityList.addAll(facilityIntegerMap.keySet());
-        ReadAndWriteRoom.write(roomIntegerMap, "D:\\codegym\\A0321I1-Le-Manh-Hung-moduel2\\Module2\\src\\case_study\\data\\room.csv");
+        ReadAndWriteRoom.write(roomIntegerMap, "D:\\codegym\\FuramaResort\\src\\data\\room.csv");
     }
 
     @Override
     public void addNewHouse() {
-        System.out.println("Enter serviceName :");
-        String serviceName = input.nextLine();
-        System.out.println("Enter usableArea :");
+        String serviceName = inputServiceName();
         double usableArea = 0;
-        try {
-            usableArea = Double.parseDouble(input.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
+        usableArea = Double.parseDouble(inputUsableArea());
         System.out.println("Enter rentalCost :");
         double rentalCost = 0;
         try {
@@ -185,13 +166,7 @@ public class FacilityServiceImpl implements FacilityService {
         } catch (NumberFormatException e) {
             System.out.println("Import bad format, please enter back");
         }
-        System.out.println("Enter maximumNumberPeople :");
-        int maximumNumberPeople = 0;
-        try {
-            maximumNumberPeople = Integer.parseInt(input.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
+        int maximumNumberPeople = Integer.parseInt(inputNumberPeople());
         System.out.println("Enter rentalType :");
         String rentalType = input.nextLine();
         System.out.println("Enter roomStandard :");
@@ -207,12 +182,11 @@ public class FacilityServiceImpl implements FacilityService {
         houseIntegerMap.put(house, House.valueHouse());
         System.out.println("successfully added new house");
 //        facilityList.addAll(facilityIntegerMap.keySet());
-        ReadAndWriteHouse.write(houseIntegerMap, "D:\\codegym\\A0321I1-Le-Manh-Hung-moduel2\\Module2\\src\\case_study\\data\\house.csv");
+        ReadAndWriteHouse.write(houseIntegerMap, "D:\\codegym\\FuramaResort\\src\\data\\house.csv");
     }
 
 
     @Override
     public void displayListFacilityMaintenance() {
-
     }
 }

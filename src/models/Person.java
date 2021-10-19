@@ -73,12 +73,12 @@ public abstract class Person implements Serializable {
     @Override
     public String toString() {
         return "Person{" +
-                "name='" + name + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", sex='" + sex + '\'' +
+                "name='" + name +
+                ", dateOfBirth='" + dateOfBirth +
+                ", sex='" + sex +
                 ", identityCardNumber=" + identityCardNumber +
-                ", telephoneNumber='" + telephoneNumber + '\'' +
-                ", email='" + email + '\'' +
+                ", telephoneNumber='" + telephoneNumber +
+                ", email='" + email +
                 '}';
     }
 }

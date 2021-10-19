@@ -2,7 +2,7 @@ package models;
 
 import java.time.LocalDate;
 
-public class Villa extends Facility {
+public class  Villa extends Facility {
     private String roomStandard;
     private double swimmingPoolArea;
     private int numberOfFloors;
@@ -52,7 +52,7 @@ public class Villa extends Facility {
     @Override
     public String toString() {
         return "Villa{" +
-                "roomStandard='" + roomStandard + '\'' +
+                "roomStandard='" + roomStandard  +
                 ", swimmingPoolArea=" + swimmingPoolArea +
                 ", numberOfFloors=" + numberOfFloors +
                 "} " + super.toString();

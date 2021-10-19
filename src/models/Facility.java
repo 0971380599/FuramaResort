@@ -64,11 +64,11 @@ private String rentalType;
     @Override
     public String toString() {
         return "Facility{" +
-                "serviceName='" + serviceName + '\'' +
+                "serviceName='" + serviceName +
                 ", usableArea=" + usableArea +
                 ", rentalCost=" + rentalCost +
                 ", maximumNumberPeople=" + maximumNumberPeople +
-                ", rentalType='" + rentalType + '\'' +
+                ", rentalType='" + rentalType +
                 '}';
     }
 }
